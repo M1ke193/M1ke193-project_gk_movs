@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player';
 import Actor from '../sliderarrow/actor';
 import {Link} from 'react-router-dom'
 /* api_img */
-const IMG_API = "https://image.tmdb.org/t/p/w500";
+const IMG_API = "https://image.tmdb.org/t/p/original";
 /* api_img */
 const apitrailer = '/videos';
 const api_key ='?api_key=7594db077d94ef4619043ef966d3e26d&language=en-US"'

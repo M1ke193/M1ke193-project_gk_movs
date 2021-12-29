@@ -189,7 +189,7 @@ return (
         <div className='modal-moive-pos' onClick={hideModal}>
             <div className='modal-moive-infor' onClick={stopModal}>
                 <div className='modal-header'>
-                    <img src={ Detailtv.backdrop_path ==null? noimg : IMG_API_ORI+ Detailtv.backdrop_path} alt='IMG'/>
+                    <img src={ Detailtv.backdrop_path == null? noimg : IMG_API_ORI+ Detailtv.backdrop_path} alt='IMG'/>
                     <i class="fas fa-times" onClick={hideModal}></i>
                 </div>
                 <div className='modal-heading-name'>

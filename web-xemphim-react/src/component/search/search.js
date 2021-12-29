@@ -231,8 +231,13 @@ function Search (){
             hideIconArrow.classList.remove('active');
         })    
     }
+
+    function scrollToTopSearch(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
 return(
-    <div className="search-bg" onClick={ clickHide}>
+    <div className="search-bg" onClick={clickHide} onLoad={scrollToTopSearch}>
         <div className="result-search">
             <span>Search Results</span>
             <span className="choose-type">
@@ -320,7 +325,7 @@ return(
                             </div>
                             <div className='modal-type'>
                                 {
-                                (Detailtv.genres || Detailtv.genres !== null)? 
+                                (Detailtv.genres || Detailtv.genres != null)? 
                                 Detailtv.genres.map(
                                     (key) => {
                                         return(

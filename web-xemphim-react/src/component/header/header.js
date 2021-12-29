@@ -5,21 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {useState} from 'react';
 import {Link,useNavigate} from 'react-router-dom'
 
-
-const Search_api = 'https://api.themoviedb.org/3/search/movie?api_key=7594db077d94ef4619043ef966d3e26d&query=';
-
 function Header (){
     const [searchkey, setsearchkey] = useState('');
     const navigate = useNavigate();
 
     function showClickSearch(e) {
-        const showSearch= document.querySelector(".js-search");
+        const showSearch = document.querySelector(".js-search");
         showSearch.classList.toggle('active');
         e.stopPropagation();
     }
     
     function hideClickSearch(e) {
-        const hideSearch= document.querySelector(".js-search");
+        const hideSearch = document.querySelector(".js-search");
         hideSearch.classList.remove('active');
         resetInputField();
     }
@@ -61,11 +58,8 @@ function Header (){
         e.preventDefault();
         if(searchkey)
         {
-            fetch(Search_api+searchkey).then((res)=>res.json())
-            .then((data) =>{
-                navigate('/search', {
-                    state: {searchkey:searchkey}
-                });
+            navigate('/search', {
+                state: {searchkey:searchkey}
             });
         }
         setsearchkey('');

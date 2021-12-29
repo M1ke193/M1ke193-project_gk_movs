@@ -75,6 +75,7 @@ function Slider({movslider}){
         hideModal.classList.remove('active') 
         setshow(false) 
     }
+    
     function stopModalarrow(e){
         e.stopPropagation();
     }
@@ -94,6 +95,7 @@ function Slider({movslider}){
                 setshow(true)
             }
     }
+
     const Getdetailtv = async () => {
         const url = detailmoive+id+api_key;
         let response = await fetch(url)
