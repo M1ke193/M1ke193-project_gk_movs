@@ -1,0 +1,16 @@
+.modal-heading-name-toptreding{
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.modal-heading-name-toptreding,
+.modal-infor-toptreding{
+    padding: 0;
+    color: #fff;
+}
+
+.modal-trailer-toptreding{
+    padding: 0;
+}
