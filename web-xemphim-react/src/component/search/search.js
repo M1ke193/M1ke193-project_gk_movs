@@ -10,13 +10,13 @@ import Slarrow from '../sliderarrow/slarrow'
 
 const IMG_API = "https://image.tmdb.org/t/p/w500";
 const IMG_API_ORI = "https://image.tmdb.org/t/p/original"
-const api_key ='?api_key=7594db077d94ef4619043ef966d3e26d&language=en-US'
+const api_key ='?api_key=&language=en-US'
 const detailmoive = "https://api.themoviedb.org/3/movie/";
 const detailtv = "https://api.themoviedb.org/3/tv/";
 const apitrailer = '/videos';
 const noimg ='https://vanhoadoanhnghiepvn.vn/wp-content/uploads/2020/08/112815953-stock-vector-no-image-available-icon-flat-vector.jpg'
-const Search_apitv = 'https://api.themoviedb.org/3/search/tv?api_key=7594db077d94ef4619043ef966d3e26d&query=';
-const Search_api = 'https://api.themoviedb.org/3/search/movie?api_key=7594db077d94ef4619043ef966d3e26d&query=';
+const Search_apitv = 'https://api.themoviedb.org/3/search/tv?api_key=&query=';
+const Search_api = 'https://api.themoviedb.org/3/search/movie?api_key=&query=';
 
 function Search (){
     const {state}  = useLocation();
