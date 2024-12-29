@@ -10,11 +10,11 @@ import Slider from './component/slider/slider';
 import WatchMovie from './component/watchmovie/watchmovie';
 
 // some_api_key 
-const api_key = 'api_key=7594db077d94ef4619043ef966d3e26d';
+const api_key = 'api_key=';
 const base_url = 'https://api.themoviedb.org/3'
 const search_api_pop = base_url + '/discover/movie?sort_by=popularity.desc&' + api_key;
-const tv_season = 'https://api.themoviedb.org/3/tv/top_rated?api_key=7594db077d94ef4619043ef966d3e26d&language=en-US&page=90';
-const slider_moives = 'https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22&api_key=7594db077d94ef4619043ef966d3e26d';
+const tv_season = 'https://api.themoviedb.org/3/tv/top_rated?api_key=&language=en-US&page=90';
+const slider_moives = 'https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22&api_key=';
 
 if (window.devicePixelRatio === 1.25) {
   document.body.style.zoom = "80%"

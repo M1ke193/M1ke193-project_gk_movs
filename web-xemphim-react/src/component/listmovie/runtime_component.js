@@ -3,7 +3,7 @@ import './listmovie.css';
 import {useEffect, useState} from 'react';
 
 const detailmoive = "https://api.themoviedb.org/3/tv/";
-const api_key ='?api_key=7594db077d94ef4619043ef966d3e26d&language=en-US'
+const api_key ='?api_key=&language=en-US'
 
 function Runtime ({index,idarr}) {
     const [runtime,setruntime] = useState('')
