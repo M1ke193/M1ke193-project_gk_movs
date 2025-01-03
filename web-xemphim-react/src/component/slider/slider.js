@@ -8,7 +8,7 @@ import Runtimearrow from '../header/runtime_arrow';
 import Actor from '../sliderarrow/actor'
 
 const IMG_API = "https://image.tmdb.org/t/p/original";
-const api_key ='?api_key=&language=en-US"'
+const api_key =`?api_key=${process.env.API_KEY}&language=en-US`
 const detailmoive = "https://api.themoviedb.org/3/movie/";
 const noimg ='https://vanhoadoanhnghiepvn.vn/wp-content/uploads/2020/08/112815953-stock-vector-no-image-available-icon-flat-vector.jpg'
 

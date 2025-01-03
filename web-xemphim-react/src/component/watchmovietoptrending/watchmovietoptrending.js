@@ -3,7 +3,7 @@ import './watchmovietoptrending.css';
 import ReactPlayer from 'react-player';
 import {useEffect, useState} from 'react';
 
-const api_key ='?api_key=&language=en-US"'
+const api_key =`?api_key=${process.env.API_KEY}&language=en-US`
 const detailmoive = "https://api.themoviedb.org/3/movie/";
 
 function WatchMovie(){

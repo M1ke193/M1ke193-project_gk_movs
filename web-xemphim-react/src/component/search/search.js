@@ -10,7 +10,7 @@ import Slarrow from '../sliderarrow/slarrow'
 
 const IMG_API = "https://image.tmdb.org/t/p/w500";
 const IMG_API_ORI = "https://image.tmdb.org/t/p/original"
-const api_key ='?api_key=&language=en-US'
+const api_key =`?api_key=${process.env.API_KEY}&language=en-US`
 const detailmoive = "https://api.themoviedb.org/3/movie/";
 const detailtv = "https://api.themoviedb.org/3/tv/";
 const apitrailer = '/videos';

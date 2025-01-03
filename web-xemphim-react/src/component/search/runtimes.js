@@ -3,7 +3,7 @@ import {useState} from 'react';
 
 const detailmoive = "https://api.themoviedb.org/3/movie/";
 const detailtv = "https://api.themoviedb.org/3/tv/";
-const api_key ='?api_key=&language=en-US'
+const api_key =`?api_key=${process.env.API_KEY}&language=en-US`
 
 function Runtimes ({index,idarr,type}) {
     const [runtime,setruntime] = useState('')

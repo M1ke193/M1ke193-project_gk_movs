@@ -2,7 +2,7 @@ import React from 'react';
 import {useEffect, useState} from 'react';
 
 const detailmoive = "https://api.themoviedb.org/3/movie/";
-const api_key ='?api_key=&language=en-US'
+const api_key =`?api_key=${process.env.API_KEY}&language=en-US`
 
 function Runtimearrow ({index,idarr}) {
     const [runtime,setruntime] = useState('')
